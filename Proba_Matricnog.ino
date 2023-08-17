@@ -37,7 +37,7 @@ void  loop() {
         lc.setRow(3, j, cifre09[greske][j]);
       } else {
         lc.setRow(2, j, cifre09[greske%10][j]*2);
-        lc.setRow(3, j, cifre09[greske/10][j]/2);
+        lc.setRow(3, j, cifre09[greske%100/10][j]/2);
       }
     }
     delay(1000);
